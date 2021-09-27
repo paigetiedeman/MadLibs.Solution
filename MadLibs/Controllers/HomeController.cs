@@ -12,10 +12,13 @@ namespace MadLibs.Controllers
     public ActionResult ShortForm() {return View();}
 
     [Route("/shortstory")]
-    public ActionResult ShortStory(string adjective, string pluralNoun)
+    public ActionResult ShortStory(string adjective, string pluralNoun, string noun, string verb)
     {
       MadLibsVariable myMadLibVariable = new MadLibsVariable();
       myMadLibVariable.Adjective = adjective;
+      myMadLibVariable.PluralNoun = pluralNoun;
+      myMadLibVariable.Noun = noun;
+      myMadLibVariable.Verb = verb;
       return View(myMadLibVariable);
     }
 
