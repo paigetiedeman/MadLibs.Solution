@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <title>MadLibs</title>
+</head>
+<body>
+  <div class="container" >
+  <div class="jumbotron" style="text-align:center">
+    <h1>Welcome to MadLibs!</h1>
+  </div>
+  <h3 style="text-align:center">Enter your own words to fill in the blanks of a custom story:</h3>
+  <form action="/shortstory" method="post">
+  <div class="form-group">
+    <label for="adjective">Adjective:</label>
+    <input id="adjective" name="adjective" type="text" placeholder="fizzy">
+  </div>
+  <div class="form-group">
+    <label for="pluralnoun">Plural noun:</label>
+    <input id="pluralnoun" name="pluralnoun" type="text" placeholder="monkeys">
+  </div>
+  <div class="form-group">
+    <label for="noun">Noun:</label>
+    <input id="noun" name="noun" type="text" placeholder="ice">
+  </div>
+  <div class="form-group">
+    <label for="verb">Verb in past tense:</label>
+    <input id="verb" name="verb" type="text" placeholder="flew">
+  </div>
+    <button type="submit" class="btn btn-primary">Show me the story!</button>
+  </form>
+  </div>
+</body>
+</html>
