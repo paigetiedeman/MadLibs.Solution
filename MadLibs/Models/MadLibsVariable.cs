@@ -15,5 +15,6 @@ namespace MadLibs.Models
     public string AbstractNoun { get; set; }
     public string AdjectiveThree { get; set; }
     public string PluralNoun { get; set; }
+
   }
 }

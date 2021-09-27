@@ -6,6 +6,20 @@ namespace MadLibs.Controllers
   public class HomeController : Controller
   {
     [Route("/")]
+    public ActionResult Index() {return View();}
+
+    [Route("/shortform")]
+    public ActionResult ShortForm() {return View();}
+
+    [Route("/shortstory")]
+    public ActionResult ShortStory(string adjective, string pluralNoun)
+    {
+      MadLibsVariable myMadLibVariable = new MadLibsVariable();
+      myMadLibVariable.Adjective = adjective;
+      return View(myMadLibVariable);
+    }
+
+    [Route("/form")]
     public ActionResult Form() { return View(); }
 
     [Route("/story")]
